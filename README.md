@@ -64,4 +64,13 @@ npm install
 npx prisma generate
 npx prisma migrate dev
 npm run dev
+```
+### Create a .env file in the backend folder:
+
+```bash
+DATABASE_URL=postgresql://username:password@localhost:5432/dbname
+CLOUDINARY_API_KEY=your_cloudinary_key
+CLOUDINARY_API_SECRET=your_cloudinary_secret
+CLOUDINARY_CLOUD_NAME=your_cloudinary_name
+JWT_SECRET=your_jwt_secret
 
