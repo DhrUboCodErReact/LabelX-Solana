@@ -137,7 +137,7 @@ If you find a bug, have a feature request, or just want to contribute — feel f
 
 ```bash
 # Fork it
-git clone https://github.com/your-username/data-labeling-web3.git
+git clone https://github.com/DhrUboCodErReact/data-labeling-web3.git
 cd data-labeling-web3
 ```
 
