@@ -164,4 +164,6 @@ This project is not just a codebase — it's a result of late-night debugging, c
 
 Always open to collaboration, new ideas, and contributions.
 
+# LabelX – A Decentralized Data Labeling Platform  
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
