@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Phantom Login Test</title>
+</head>
+<body>
+  <h1>Test Solana Phantom Login</h1>
+  <button id="connectBtn">Connect & Login</button>
+
+  <script type="module">
+    import bs58 from 'https://cdn.jsdelivr.net/npm/bs58@6.0.0/+esm';
+
+    document.getElementById('connectBtn').onclick = async () => {
+      const provider = window.solana;
+
+      if (!provider || !provider.isPhantom) {
+        alert("❌ Phantom wallet not found!");
+        return;
+      }
+
+      try {
+        const connectRes = await provider.connect();
+        const pubKeyStr = connectRes.publicKey.toString();
+        const message = "Sign this message to login";
+
+        console.log("✅ publicKey:", pubKeyStr);
+        console.log("✅ message:", message);
+
+        const encodedMessage = new TextEncoder().encode(message);
+        const signedMessage = await provider.signMessage(encodedMessage, "utf8");
+
+        const signature = bs58.encode(signedMessage.signature);
+        console.log("✅ signature:", signature);
+
+        const response = await fetch('http://localhost:5000/api/v1/auth/userSignin', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            publicKey: pubKeyStr,
+            message,
+            signature,
+          }),
+        });
+
+        const data = await response.json();
+        if (response.ok) {
+          alert("✅ Login success!\nToken: " + data.token);
+        } else {
+          alert("❌ Login failed: " + data.message);
+          console.log(data);
+        }
+
+      } catch (err) {
+        console.error("❌ Error:", err);
+        alert("Something went wrong. See console.");
+      }
+    };
+  </script>
+</body>
+</html>
