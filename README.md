@@ -173,5 +173,3 @@ This project is not just a codebase — it's a result of late-night debugging, c
 
 Always open to collaboration, new ideas, and contributions.
 
-
-
