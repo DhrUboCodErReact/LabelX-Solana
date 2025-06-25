@@ -128,3 +128,40 @@ This platform was the result of **weeks of deep development and testing**. From 
 
 Every obstacle turned into a learning curve — shaping not just the code, but the **vision for a more accessible and autonomous future in data labeling**.
 
+---
+
+## 🤝 Contributions
+
+Pull requests are welcome!  
+If you find a bug, have a feature request, or just want to contribute — feel free to fork the repo and open an issue to get started.
+
+```bash
+# Fork it
+git clone https://github.com/your-username/data-labeling-web3.git
+cd data-labeling-web3
+```
+
+---
+
+## 👨‍💻 About Me
+
+Hi, I'm **Dhrubajyoti Das** – a final-year B.Tech student in **Electronics and Communication Engineering (ECE)**, graduating in **2025**.
+
+I'm deeply passionate about:
+
+- ⚙️ Building end-to-end full-stack systems  
+- 🌐 Web3 applications on Solana  
+- 🤖 Integrating AI into real-world workflows  
+- 🧠 Problem solving through tech innovation  
+
+This project is not just a codebase — it's a result of late-night debugging, countless commits, and a relentless drive to push boundaries in decentralized technology.
+
+📬 Let’s connect:
+
+- 💼 [LinkedIn](https://www.linkedin.com/in/dhrubajyoti-das-83b4662b6/)
+- 🌐 [Portfolio](https://dhrubajyoti.netlify.app/)
+- 🐦 [Twitter](https://twitter.com/your-twitter)
+
+Always open to collaboration, new ideas, and contributions.
+
+
