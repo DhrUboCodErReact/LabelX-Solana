@@ -4,7 +4,7 @@
 
 
 
-# 🧠 Decentralized Data Labeling Platform (Web3 + Solana)
+#  Decentralized Data Labeling Platform (Web3 + Solana)
 
 A capstone project that brings decentralization to AI dataset labeling using Web3 technologies and the Solana blockchain. This platform enables real-time, secure, and transparent micropayments in SOL for annotators — eliminating intermediaries and empowering global contributors.
 
