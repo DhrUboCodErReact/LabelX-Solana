@@ -1,3 +1,7 @@
+# LabelX – A Decentralized Data Labeling Platform  
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
+
 # 🧠 Decentralized Data Labeling Platform (Web3 + Solana)
 
 A capstone project that brings decentralization to AI dataset labeling using Web3 technologies and the Solana blockchain. This platform enables real-time, secure, and transparent micropayments in SOL for annotators — eliminating intermediaries and empowering global contributors.
@@ -156,14 +160,16 @@ I'm deeply passionate about:
 
 This project is not just a codebase — it's a result of late-night debugging, countless commits, and a relentless drive to push boundaries in decentralized technology.
 
+
 📬 Let’s connect:
+
 
 - 💼 [LinkedIn](https://www.linkedin.com/in/dhrubajyoti-das-83b4662b6/)
 - 🌐 [Portfolio](https://dhrubajyoti.netlify.app/)
 
 
+
 Always open to collaboration, new ideas, and contributions.
 
-# LabelX – A Decentralized Data Labeling Platform  
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 
