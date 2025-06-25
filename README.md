@@ -65,7 +65,7 @@ npx prisma generate
 npx prisma migrate dev
 npm run dev
 ```
-### Create a .env file in the backend folder:
+### Create a .env file in the backend folder
 
 ```bash
 DATABASE_URL=postgresql://username:password@localhost:5432/dbname
@@ -73,4 +73,58 @@ CLOUDINARY_API_KEY=your_cloudinary_key
 CLOUDINARY_API_SECRET=your_cloudinary_secret
 CLOUDINARY_CLOUD_NAME=your_cloudinary_name
 JWT_SECRET=your_jwt_secret
+```
+### Frontend Setup
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+### Create a .env.local in the frontend folder
+
+```bash
+NEXT_PUBLIC_API_BASE_URL=http://localhost:5000
+```
+
+## 📈 Impact & Vision
+
+### 🌍 Global Inclusion  
+Empowering contributors from around the world — even the unbanked — to participate using decentralized crypto wallets. This ensures that opportunity is not limited by geography or traditional banking systems.
+
+### 💸 Auditable Payments  
+All contributor payouts are executed **on-chain**, providing transparent, secure, and lightning-fast transactions. Every payment is verifiable and tamper-proof by design.
+
+### 🔁 DAO-Ready Architecture  
+The platform's architecture is designed with future decentralization in mind — supporting modules for **governance**, **staking**, and **incentive-based rewards** via tokenomics.
+
+### 🧠 AI-Driven Future  
+The roadmap includes native integrations with AI pipelines, making it easy to feed labeled data directly into ML workflows, enabling seamless AI model refinement.
+
+---
+
+## 🛠️ Challenges Faced
+
+- ⚙️ **Async Payouts & Solana Signatures**  
+  Building and debugging complex asynchronous payout pipelines while ensuring Solana signature verification was consistent and secure.
+
+- 📤 **Media Upload Management**  
+  Coordinating file uploads (Cloudinary & AWS S3) across roles like workers and validators required careful state handling and error resilience.
+
+- 🧩 **Prisma Schema Modeling**  
+  Designed a flexible and efficient relational schema to support multi-role task relationships using Prisma ORM.
+
+- 🚨 **Backend 500 Errors**  
+  Tackled elusive backend errors — often hard to reproduce — that demanded deep tracing, logging, and system-level debugging.
+
+- 🪙 **Wallet Adapter Instabilities**  
+  Addressed issues related to wallet connection, including Phantom popup failures and inconsistent adapter behavior across browsers.
+
+---
+
+## 💡 Behind the Build
+
+This platform was the result of **weeks of deep development and testing**. From sleepless nights tracing async bugs to refining every API call and UI interaction, each commit moved the project closer to a seamless decentralized workflow.
+
+Every obstacle turned into a learning curve — shaping not just the code, but the **vision for a more accessible and autonomous future in data labeling**.
 
