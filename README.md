@@ -1,27 +1,67 @@
-# Data-Label-Web3
+# 🧠 Decentralized Data Labeling Platform (Web3 + Solana)
 
-This is a data-labelling platform which leverages blockchain to make payments. A user can upload his images and other people can select the best image they like. User will have to pay few sols to upload their images for review and workers who will vote will get some sols for selecting the best images they like. To test it select a wallet which supports solana and switch to solana devnet in your wallet
+A capstone project that brings decentralization to AI dataset labeling using Web3 technologies and the Solana blockchain. This platform enables real-time, secure, and transparent micropayments in SOL for annotators — eliminating intermediaries and empowering global contributors.
 
-#### To run this project on your local machines:
+---
+
+## 🚀 Project Summary
+
+High-quality labeled data is vital for AI/ML applications, but traditional annotation platforms are centralized, expensive, and opaque. This project presents a decentralized alternative by leveraging blockchain, cloud-native storage, and wallet-based authentication.
+
+> 🎯 Built as part of my B.Tech Final Year Capstone Project, this proof-of-concept demonstrates the potential of Web3 to drive innovation in digital labor infrastructure.
+
+---
+
+## 🔍 Core Features
+
+- **🔐 Decentralized Authentication:**  
+  Sign in with Phantom or any Solana-compatible wallet. No username or password required.
+
+- **💸 Blockchain Micropayments:**  
+  Contributors are paid instantly in SOL for each successfully verified task using Solana’s low-fee blockchain.
+
+- **🧑‍💼 Role-Based Dashboards:**  
+  - **Requester:** Upload and manage image-labeling tasks.
+  - **Annotator:** Claim tasks, annotate images, and receive SOL.
+  - **Validator:** Review and approve annotations for quality assurance.
+
+- **☁️ Scalable Media Storage:**  
+  Uploads are stored securely via **AWS S3** and delivered through **CloudFront** for high performance.
+
+- **⚙️ Background Workers & REST APIs:**  
+  Handle task scheduling, verification pipelines, and payment automation.
+
+---
+
+## 🧱 Tech Stack
+
+| Layer        | Technology |
+|--------------|------------|
+| **Frontend** | React.js, Next.js, Tailwind CSS, TypeScript |
+| **Backend**  | Node.js, Express.js |
+| **Blockchain** | Solana Web3.js, Solana Wallet Adapter |
+| **Database** | PostgreSQL + Prisma ORM |
+| **Storage**  | AWS S3, CloudFront |
+| **DevOps**   | GitHub, Postman, Vercel |
+
+---
+
+## 🧑‍💻 Developer Setup
+
+### Prerequisites
+
+- Node.js (v18+)
+- PostgreSQL
+- Phantom Wallet (for testing)
+- Solana CLI (optional)
+- AWS credentials for S3/CloudFront (if using media upload)
+
+### Backend Setup
 
 ```bash
+cd backend
 npm install
-```
-
-- frontend:
-```bash
+npx prisma generate
+npx prisma migrate dev
 npm run dev
-```
-- backend:
-```bash
-npm start
-```
 
-
-
-
-Tech Stack:
-- Frontend: Next.js
-- Backend: Express.js
-- ORM: Prisma
-- DB: postgresql
